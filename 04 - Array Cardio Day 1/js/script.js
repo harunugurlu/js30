@@ -148,3 +148,14 @@
  // Sum up the instances of each of these
 
  const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+
+ const sum = data.reduce(function(total, item) {
+
+     if (item in total) {
+         total[item]++;
+     } else {
+         total[item] = 1;
+     }
+     return total;
+ }, {})
+ console.log(sum);
