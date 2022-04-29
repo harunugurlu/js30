@@ -59,7 +59,7 @@ function displayMatch() { //this will display matches and it will work when the 
         suggestions.removeChild(suggestions.firstChild);
     }
 
-    const html = matchArray.map(place => {
+    matchArray.map(place => {
 
         const regex = new RegExp(this.value, 'gi');
         //formatting population
@@ -88,7 +88,7 @@ function displayMatch() { //this will display matches and it will work when the 
         li.classList.add('animate');
 
         //append list to ul
-        suggestions.appendChild(li);
+        suggestions.appendChild(li)
     });
 
     //clear the list when the input value.length = 0;
