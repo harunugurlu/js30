@@ -74,6 +74,6 @@
      ...comments.slice(index + 1)
  ];
  console.table(newComments);
-
+ console.log("test");
  comments.splice(index, 1);
  console.table(comments);
